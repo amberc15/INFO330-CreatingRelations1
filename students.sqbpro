@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/ambercarbajal/Desktop/INFO330/INFO330-CreatingRelations1/homework.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="607"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,8:mainstudents"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="students.sql">/*Create a table called &quot;students&quot; that has the following attributes on it:
+
+id, which needs to be an integer primary key
+firstname, which needs to be a string type limited to 40 characters
+lastname, which needs to be a string type limited to 80 characters
+age, which needs to be a numeric type
+Insert the following data:
+Add a few additional rows with names of your own. */
+
+
+CREATE TABLE &quot;students&quot; (
+&quot;id&quot;	INTEGER,
+&quot;firstname&quot;	TEXT(40),
+&quot;lastname&quot;	TEXT(80),
+&quot;age&quot;	INTEGER,
+PRIMARY KEY(&quot;id&quot;)
+);
+
+INSERT INTO students(id, firstname, lastname, age)
+VALUES
+(1, 'Fred', 'Flintstone', 35),
+(2, 'Wilma', 'Flintstone', 29),
+(3, 'Barney', 'Rubble', 33),
+(4, 'Betty', 'Rubble', 29),
+(5, 'Pebbles', 'Flintstone', 1),
+(6, 'Bam-Bam', 'Rubble', 1),
+(7, 'May', 'Brickstone', 14),
+(8, 'August', 'Brickstone', 16),
+(9, 'Leo',  'Cavewatcher', 16),
+(10, 'Sam', 'Cavewatcher', 12);
+
+SELECT * FROM students;</sql><current_tab id="0"/></tab_sql></sqlb_project>
